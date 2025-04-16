@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: vite-frontend
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/joakimfellbom/application-deployment.git
+    targetRevision: main
+    path: deployment
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: user-joakimfellbom
+  syncPolicy:
+    automated:
+      selfHeal: true
