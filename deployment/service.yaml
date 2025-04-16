@@ -4,6 +4,8 @@ metadata:
   name: vite-frontend
 spec:
   type: NodePort
+  selector:
+    app: vite-frontend
   ports:
     - port: 80
       targetPort: 4173
