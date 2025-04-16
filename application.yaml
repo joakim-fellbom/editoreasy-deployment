@@ -5,7 +5,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/joakimfellbom/editoreasy-deployment.git
+    repoURL: https://github.com/joakim-fellbom/editoreasy-deployment.git
     targetRevision: main
     path: deployment
   destination:
