@@ -3,8 +3,8 @@
 
 Le déploiement sur ArgoCD a l'air de fonctionner correctement mais l'URL, il semblerait que le domaine n'existe pas publiquement.
 
-Test sur le Terminal VSCode de l'application sur le SSPCloud :
-'''''''''''''''''''''''''''''''''''''''
+Test sur le Terminal VSCode de l'application sur le SSPCloud :  
+
 (base) onyxia@vscode-python-739592-0:~/work/editoreasy-showcase$ kubectl describe ingress vite-frontend
 Name:             vite-frontend
 Labels:           argocd.argoproj.io/instance=vite-frontend
@@ -13,11 +13,10 @@ Address:          10.233.1.91
 Ingress Class:    nginx
 Default backend:  <default>
 Rules:
-  Host                                                  Path  Backends
-  ----                                                  ----  --------
+  Host                                                  Path  Backends  
   vite-frontend.user-joakimfellbom.cloud.sp5.onyxia.io  
-                                                        /   vite-frontend:80 (10.233.115.77:4173)
-Annotations:                                            nginx.ingress.kubernetes.io/rewrite-target: /
+                                                           vite-frontend:80 (10.233.115.77:4173)
+Annotations:                                            nginx.ingress.kubernetes.io/rewrite-target: 
 Events:                                                 <none>
-'''''''''''''''''''''''''''''''''''''''
+
 
